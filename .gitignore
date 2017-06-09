@@ -1,0 +1,10 @@
+# ignore EVERYTHING
+*
+
+# but WAIT don't ignore these things
+!*/
+!.gitignore
+!*.css
+!*.html
+!*.js
+!*.master*

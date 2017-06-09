@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'socicon';
+  src: url('fonts/socicon.eot');
+  src: url('fonts/socicon.eot?#iefix') format('embedded-opentype'), url('fonts/socicon.woff') format('woff'), url('fonts/socicon.ttf') format('truetype'), url('fonts/socicon.svg#glyphicons-halflingsregular') format('svg');
+}
+.socicon {
+  color: #fff;
+  font-family: 'socicon' !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.socicon:empty{
+    width: 1em;
+}
+
+.icon
+{
+ 
+  width:32px;
+  height:33px;
+  font-size:18px;
+  text-align:center;
+  line-height:18px;
+  padding-top:6px;
+  display:inline-block;
+  color:#fff;
+ 
+  background: #ccc;
+}
+
+
+/*common background colors
+.facebook-icon
+{
+  background-color: #436DBA;
+}
+.twitter-icon
+{
+  background-color: #3AC3FF;
+}
+.instagram-icon
+{
+  background-color: #B57A37;
+}
+.google-plus-icon
+{
+  background-color: #FF4D00;
+}
+.youtube-icon
+{
+  background-color: #F00;
+}
+.blogger-icon
+{
+  background-color: #FF7E00;
+}
+*/
+
+a.icon
+{
+  color:#fff;
+    -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+a.icon:hover
+{
+  text-decoration:none;
+  box-shadow:none;
+}

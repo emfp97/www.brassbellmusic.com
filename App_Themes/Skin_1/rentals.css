@@ -1,0 +1,102 @@
+﻿.rental-topic-wrapper
+{
+margin-bottom:18px;
+}
+.rental-selection-wrapper
+{
+position:relative;
+}
+.rental-label
+{
+display:block;
+font-weight:bold;
+}
+.spinner-loader
+{
+position:absolute;
+width:100%;
+  top: 26px;
+  right: 25px;
+
+}
+.inner-rental-main
+{
+box-shadow:0px 0px 3px rgba(0,0,0,.3);
+padding:18px;
+
+}
+.rental-downpayment-label, .rental-quarterly-label
+{
+font-weight:bold;
+display:block;
+padding-right:2px;
+}
+.rental-select-dropdown
+{
+
+    margin-bottom:12px;
+}
+
+.rental-instrument-row
+{
+  margin-bottom: 3px;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 12px;
+  background: #efefef;
+  padding: 10px;
+}
+.rental-instrument-listing
+{
+margin-bottom:18px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+padding:12px;
+}
+.rental-select-dropdown
+{
+margin-bottom:8px;
+}
+.school-rental-label
+{
+font-weight:Bold;
+font-size:15px;
+}
+.inner-rental-frame
+{
+	background:#efefef;
+	padding:24px;
+}
+.instrument-rental-table
+{
+width:100%;
+}
+
+.main-instrument-row
+{
+clear:both;
+padding:10px;
+}
+.rental-button-cell
+{
+text-align:right;
+}
+.rental-type-name
+{
+  font-weight: Bold;
+  float: left;
+  font-size: 15px;
+  display: block;
+  padding-top: 7px;
+
+}
+td.payment-cell
+{
+text-align:right;
+}
+.button.rent-instrument-button
+{
+    padding: 8px 18px;
+    font-size: 12px;
+    background: #A02929;
+    color: #fff;
+    margin-right:4px;
+}
