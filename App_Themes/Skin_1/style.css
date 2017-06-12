@@ -97,7 +97,7 @@ html,body
 }
 
 .input-group > div {
-	display: table-footer-group;
+	display: inherit;
 }
 
 .col-sm-2 {
@@ -111,10 +111,24 @@ html,body
 }
 
 .navbar-brand img {
-	height: 4rem;
+	height: 3rem;
+}
+
+.navbar-right {
+	display: none;
 }
 
 @media only screen and (min-width: 769px) {
+	.navbar-brand {
+		float: left;
+		margin: 1.6rem .4rem;
+		line-height: 2rem;
+	}
+
+	.navbar-brand img {
+		height: 4rem;
+	}
+
     .dropdown-menu .row {
         display: flex;
     }
@@ -129,6 +143,10 @@ html,body
     .navbar-toggle {
         display: none;
     }
+
+	.navbar-right {
+		display: block;
+	}
 }
 
 .divider {
@@ -158,8 +176,6 @@ html,body
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
     background-repeat: repeat-x;
     border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
 }
 
 .navbar-static-top {
@@ -169,6 +185,7 @@ html,body
 
 .nav > li {
 	margin-left: 1rem;
+	margin-top: 3px;
 }
 
 .social {
@@ -207,11 +224,6 @@ html,body
 
 .youtube:hover {
     background-position: -640px -64px;
-}
-
-#hd-logo, #hd-search, #hd-cart, #hd-cart-list, #hd-cart-total, #main-carousel {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 /* page structure */
@@ -351,9 +363,6 @@ h1.entity-page-header {
 	transition: all 0.4s ease;
 	min-height: 400px;
 }
-
-	.grid-inner-frame:hover {
-	}
 
 .grid-item-name-wrap {
 	margin-bottom: 14px;
@@ -1352,10 +1361,6 @@ a.brand-links {
 
 /*<<<<<<<<<<<   CUSTOM MEDIA QUERIES HERE   >>>>>>>>>>>>*/
 @media (min-width: 768px) {
-	.navbar-nav > li > a {
-    	padding-top: 15px;
-    	padding-bottom: 15px;
-	}
     .variant-list-inner
     {
         padding:32px;
@@ -1463,7 +1468,7 @@ a.brand-links {
 	}
 
 	.billboard-wrapper {
-		margin: 1rem 1.5rem;
+		margin: 0px 1.5rem;
 	}
 
 	.add-to-wishlist {
@@ -1523,7 +1528,7 @@ a.brand-links {
     
     .retail-info-box
     {
-        padding-top:24px;
+        padding-top: 0px;
     }
 
     .category-link-box {

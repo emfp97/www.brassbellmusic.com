@@ -55,16 +55,29 @@
 
 		<nav class="navbar navbar-default navbar-static-top">
   			<div class="container">
-				  <a class="navbar-brand" href="/">
-      					<img src="/images/logos/basic_logo_large.png" alt="Brass Bell"> 
-    			  </a>
 				  <div class="navbar-header">
 					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span>
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
       				</button>
+				    <a class="navbar-brand" href="/">
+      					<img src="/images/logos/basic_logo_large.png" alt="Brass Bell">
+    			    </a>
     			</div>
+				<ul class="nav navbar-nav navbar-right">
+                	<li>
+						<div id="hd-search" class="input-group">
+							<custom:Search ID="Search1" runat="server" />
+						</div>
+					</li>
+        			<li>
+                    	<div id="hd-cart">
+                    		<a href="http://www.shopbrassbellmusic.com/shopping_cart.php" class="btn btn-block" role="button">
+							<span class="glyphicon glyphicon-shopping-cart icon-rotate icon-flipped" aria-hidden="true"></span> Cart</a>
+                		</div>
+					</li>
+      			</ul>
     			<div id="navbar" class="navbar-collapse collapse">
       				<ul class="nav navbar-nav">
 						  <li class="dropdown">
@@ -97,30 +110,9 @@
           					</ul>
         				</li>
       				</ul>
-      				<ul class="nav navbar-nav navbar-right">
-                		<li><a href="https://shopbras.musicpayhost.com/account.php?sid=c9a331a0f8f3368cd2396e8c6ecab804">My Account</a></li>
-        				<li><a href="https://shopbras.musicpayhost.com/checkout.php?sid=c9a331a0f8f3368cd2396e8c6ecab804">Checkout</a></li>
-      				</ul>
     			</div>
   			</div>
 		</nav>
-
-		<!--<div class="container">
-			<div class="row">
-      			<div class="col-md-5">
-        			<a href="http://www.brassbellmusic.com"><img id="hd-logo" src="/images/logos/header_logo.jpg" class="img-responsive" alt=""></a>
-      			</div>
-      			<div class="col-md-13 col-sm-5">
-        			<div id="hd-cart">
-                    	<a href="http://www.shopbrassbellmusic.com/shopping_cart.php" class="btn btn-primary btn-block" role="button">
-						<span class="glyphicon glyphicon-shopping-cart icon-rotate icon-flipped" aria-hidden="true"></span> Cart</a>
-                	</div>
-		    		<div id="hd-search" class="input-group">
-						<custom:Search ID="Search1" runat="server" />
-					</div>
-				</div>
-    		</div>
-		</div>-->
 
 		<div class="main-content-wrapper">
 			<aspdnsf:Topic runat="server" TopicName="0-product-add-this" />
