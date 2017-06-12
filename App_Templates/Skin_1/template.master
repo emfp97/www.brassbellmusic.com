@@ -67,14 +67,14 @@
     			</div>
 				<ul class="nav navbar-nav navbar-right">
                 	<li>
-						<div id="hd-search" class="input-group">
-							<custom:Search ID="Search1" runat="server" />
+						<div class="input-group">
+							<custom:Search ID="Search" runat="server" />
 						</div>
 					</li>
         			<li>
                     	<div id="hd-cart">
                     		<a href="http://www.shopbrassbellmusic.com/shopping_cart.php" class="btn btn-block" role="button">
-							<span class="glyphicon glyphicon-shopping-cart icon-rotate icon-flipped" aria-hidden="true"></span> Cart</a>
+							<span class="glyphicon glyphicon-shopping-cart icon-rotate icon-flipped glyph-button" aria-hidden="true"></span></a>
                 		</div>
 					</li>
       			</ul>
