@@ -114,6 +114,8 @@
   			</div>
 		</nav>
 
+		<aspdnsf:Topic runat="server" TopicName="0-home-billboard-image" />
+
 		<div class="main-content-wrapper">
 			<aspdnsf:Topic runat="server" TopicName="0-product-add-this" />
 			<div class="main-background">
