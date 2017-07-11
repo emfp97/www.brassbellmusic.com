@@ -115,9 +115,8 @@
 		</nav>
 
 		<div class="main-content-wrapper">
-			<aspdnsf:Topic runat="server" TopicName="0-product-add-this" />
+			 <aspdnsf:Topic runat="server" TopicName="0-product-add-this" />
 			<div class="main-background">
-				<!-- <aspdnsf:XmlPackage runat="server" PackageName="homechunks" /> -->
 				<div class="container">
 					<!-- CONTENTS START -->
 					<asp:ContentPlaceHolder ID="PageContent" runat="server">
@@ -141,17 +140,21 @@
 			</div>
 		</div>
 	</form>
+
 	<aspdnsf:XmlPackage runat="server" PackageName="promo-window" />
+
 	<script type="text/javascript">
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip();
 		});
 	</script>
+
 	<asp:Literal ID="litBuySafeSeal" runat="server" Text='<%$ Tokens:BuySafeSeal %>' />
 	<asp:Literal ID="litBongoExtend" runat="server" Text='<%$ Tokens:BongoExtend %>' />
 	<asp:Literal ID="litTrustedStores" runat="server" Text='<%$ Tokens: XmlPackage, skin.trustedstores.xml.config %>' />
 	<%--This xmlpackage can be used to add dynamic data to javascripts such as tracking scripts that should run before the closing body tag--%>
 	<aspdnsf:XmlPackage runat="server" PackageName="script.bodyclose" />
+	
 	<!-- Responsive Skin Using the Twitter Bootstrap Framework (http://getbootstrap.com) -->
 	<!-- Skin Version 1.1 -->
 	<script src="App_Templates/Skin_<asp:Literal runat='server' Text='<%$ Tokens:SkinId %>' />/js/videoresize.js" type="text/javascript"></script>
