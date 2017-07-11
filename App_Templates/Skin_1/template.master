@@ -54,7 +54,7 @@
 		<% } %>
 
 		<nav class="navbar navbar-default navbar-static-top">
-  			<div class="container">
+  			<div class="top-nav">
 				  <div class="navbar-header">
 					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span>
         				<span class="icon-bar"></span>
@@ -114,10 +114,22 @@
   			</div>
 		</nav>
 
+		<div id="top-banner">
+		</div>
+
+		<script>
+			var is_root = /^\/(?:|default\.aspx?)$/i.test(location.pathname);
+
+			if(is_root) {
+				var topBanner = document.getElementById("top-banner");
+				topBanner.innerHTML = `<aspdnsf:Topic runat="server" TopicName="0-home-billboard-image" />`
+			}
+		</script>
+
 		<div class="main-content-wrapper">
-			 <aspdnsf:Topic runat="server" TopicName="0-product-add-this" />
+			<aspdnsf:Topic runat="server" TopicName="0-product-add-this" />
 			<div class="main-background">
-				<div class="container">
+				<div class="bb-container">
 					<!-- CONTENTS START -->
 					<asp:ContentPlaceHolder ID="PageContent" runat="server">
 					</asp:ContentPlaceHolder>
@@ -127,7 +139,7 @@
 		</div>
 
 		<div class="footer-wrapper">
-			<div class="container">
+			<div class="bb-container">
 				<div class="row footer-row">
 					<aspdnsf:Topic runat="server" TopicName="0-template-footer-menus" />
 					<div class="clearfix"></div>

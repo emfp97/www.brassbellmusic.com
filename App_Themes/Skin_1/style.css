@@ -135,7 +135,22 @@ html,body
    	padding-top: 1.5rem;
 }
 
-@media only screen and (min-width: 769px) {
+.bb-container {
+	padding: 0 15px;
+}
+
+@media only screen and (min-width: 768px) {
+	.top-nav {
+		padding: 0 5%;
+	}
+
+	.bb-container {
+		max-width: calc(1600px + 10%);
+    	margin: 0 auto;
+    	padding-left: 5%;
+    	padding-right: 5%;
+	}
+
 	.navbar-brand {
 		float: left;
 		display: block;
@@ -554,7 +569,7 @@ a.button {
 }
 /* horizontal navigation */
 
-.topnav, .footernav {
+.top-nav, .footernav {
 	margin: 0px;
 }
 
@@ -925,6 +940,8 @@ margin:0 auto;
 .retail-info-box
 {
     text-align:center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .featured-entity-name-wrap {
 	padding: 11px;
@@ -1139,6 +1156,9 @@ h1.product-page-header {
 .masthead img {
 	max-width: 100%;
 	max-height: 100%;
+	/* width: 100%; */
+	margin: auto;
+	/* height: auto; */
 }
 
 .masthead_full{
@@ -1198,7 +1218,7 @@ h1.product-page-header {
 	box-shadow: 0px 12px 32px rgba(0,0,0,.15);
 	padding: 24px;
 	background: rgba(0, 0, 0, 0.01);
-	margin-bottom: 32px;
+	margin-bottom: 3rem;
 }
 
 .featured-wrapper {
@@ -1382,8 +1402,28 @@ a.brand-links {
 	color: #fff;
 }
 
+.retail-info-box {
+	padding-left: 5%;
+    padding-right: 5%;
+}
+
+.welcome-text-wrapper {
+	margin-left: 5%;
+    margin-right: 5%;
+}
+
 /*<<<<<<<<<<<   CUSTOM MEDIA QUERIES HERE   >>>>>>>>>>>>*/
 @media (min-width: 768px) {
+	.retail-info-box {
+		padding-left: inherit;
+    	padding-right: inherit;
+	}
+
+	.welcome-text-wrapper {
+		 margin-left: inherit;
+    	margin-right: inherit;
+	}
+	
     .variant-list-inner
     {
         padding:32px;
