@@ -53,7 +53,7 @@
 		<ajaxToolkit:ToolkitScriptManager runat="server" ID="scrptMgr" CombineScripts="true" />
 		<% } %>
 
-		<div class="top-nav-wrapper">>
+		<div class="top-nav-wrapper">
 			<aspdnsf:Topic runat="server" TopicName="0-template-top-nav" />
 		</div>
 
