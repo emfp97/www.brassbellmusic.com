@@ -67,6 +67,9 @@
 				var topBanner = document.getElementById("top-banner");
 				topBanner.innerHTML = `<aspdnsf:Topic runat="server" TopicName="0-home-billboard-image" />`
 			}
+
+			var search = document.getElementById("Search");
+			search.innerHTML = `<custom:search id="Search" runat="server"></custom:search>`
 		</script>
 
 		<div class="main-content-wrapper">
