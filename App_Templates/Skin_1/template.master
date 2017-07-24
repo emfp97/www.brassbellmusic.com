@@ -53,64 +53,9 @@
 		<ajaxToolkit:ToolkitScriptManager runat="server" ID="scrptMgr" CombineScripts="true" />
 		<% } %>
 
-		<nav class="navbar navbar-default navbar-static-top">
-  			<div class="top-nav">
-				  <div class="navbar-header">
-					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span>
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-      				</button>
-				    <a class="navbar-brand" href="/">
-      					<img src="/images/logos/basic_logo_large.png" alt="Brass Bell">
-    			    </a>
-    			</div>
-				<ul class="nav navbar-nav navbar-right">
-                	<li>
-						<div class="input-group">
-							<custom:Search ID="Search" runat="server" />
-						</div>
-					</li>
-        			<li>
-                    	<div id="hd-cart">
-                    		<a href="http://www.shopbrassbellmusic.com/shopping_cart.php" class="btn btn-block" role="button">
-							<span class="glyphicon glyphicon-shopping-cart icon-rotate icon-flipped glyph-button" aria-hidden="true"></span></a>
-                		</div>
-					</li>
-      			</ul>
-    			<div id="navbar" class="navbar-collapse collapse">
-      				<ul class="nav navbar-nav">
-      					  <li><a href="aeRntSchoolSelect.aspx">Rentals</a></li>
-						  <li class="dropdown">
-          					<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Products<span class="caret"></span></a>
-          					<ul class="dropdown-menu" role="menu">
-            					<li><a href="http://www.shopbrassbellmusic.com/categories/Band-40.html">Band</a></li>
-            					<li><a href="http://www.shopbrassbellmusic.com/categories/Orchestra-75.html">Orchestra</a></li>
-            					<li><a href="http://www.shopbrassbellmusic.com/categories/Sheet-Music-Books-95.html">Sheet Music</a></li>
-            					<li><a href="http://www.shopbrassbellmusic.com/categories/Accessories-Gifts-166.html">Accessories &amp; Gifts</a></li>
-          						<li><a href="http://www.shopbrassbellmusic.com/categories.php">View All</a></li>
-          					</ul>
-        				  </li>
-        				  <li class="dropdown">
-							<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Lessons<span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="t-lessons.aspx">Get Started</a></li>
-								<li><a href="t-lessonsform.aspx">Lessons Inquiry</a></li>
-							</ul>
-						  </li>
-        				  <li><a href="t-repairs.aspx">Repairs</a></li>
-						  <li class="dropdown">
-          					<a href="http://www.shopbrassbellmusic.com" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">About Us<span class="caret"></span></a>
-          					<ul class="dropdown-menu" role="menu">
-            					<li><a href="http://www.shopbrassbellmusic.com/contact_us.php">Contact Us</a></li>
-    							<li><a href="t-employees.aspx">Meet Our Staff</a></li>
-								<li><a href="t-aboutus.aspx">About Us</a></li>
-          					</ul>
-        				</li>
-      				</ul>
-    			</div>
-  			</div>
-		</nav>
+		<div class="top-nav-wrapper">>
+			<aspdnsf:Topic runat="server" TopicName="0-template-top-nav" />
+		</div>
 
 		<div id="top-banner">
 		</div>
