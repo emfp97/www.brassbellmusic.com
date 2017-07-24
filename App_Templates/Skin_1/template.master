@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="AspDotNetStorefront.MasterPageBase" %>
+﻿﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="AspDotNetStorefront.MasterPageBase" %>
 
 <%@ Register TagPrefix="aspdnsfc" Namespace="AspDotNetStorefrontControls" Assembly="AspDotNetStorefrontControls" %>
 <%@ Register TagPrefix="aspdnsf" TagName="Topic" Src="~/Controls/TopicControl.ascx" %>
@@ -80,33 +80,31 @@
       			</ul>
     			<div id="navbar" class="navbar-collapse collapse">
       				<ul class="nav navbar-nav">
+      					  <li><a href="aeRntSchoolSelect.aspx">Rentals</a></li>
 						  <li class="dropdown">
-          					<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Shop<span class="caret"></span></a>
+          					<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Products<span class="caret"></span></a>
           					<ul class="dropdown-menu" role="menu">
-            					<li><a href="http://www.shopbrassbellmusic.com/categories/Orchestra-75.html">Orchestra</a></li>
             					<li><a href="http://www.shopbrassbellmusic.com/categories/Band-40.html">Band</a></li>
-            					<li><a href="http://www.shopbrassbellmusic.com/categories/Sheet-Music-Books-95.html">Print Music</a></li>
+            					<li><a href="http://www.shopbrassbellmusic.com/categories/Orchestra-75.html">Orchestra</a></li>
+            					<li><a href="http://www.shopbrassbellmusic.com/categories/Sheet-Music-Books-95.html">Sheet Music</a></li>
             					<li><a href="http://www.shopbrassbellmusic.com/categories/Accessories-Gifts-166.html">Accessories &amp; Gifts</a></li>
           						<li><a href="http://www.shopbrassbellmusic.com/categories.php">View All</a></li>
           					</ul>
         				  </li>
-						  <li class="dropdown">
-							<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Services<span class="caret"></span></a>
+        				  <li class="dropdown">
+							<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Lessons<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="http://www.brassbellmusic.com/aeRntSchoolSelect.aspx">Rentals</a></li>
-            					<li><a href="http://www.brassbellmusic.com/t-lessons.aspx">Lessons</a></li>
-            					<li><a href="http://www.brassbellmusic.com/t-PrintMusic.aspx">Print Music</a></li>
-            					<li><a href="http://www.brassbellmusic.com/t-repairs.aspx">Repairs</a></li>
-          						<li><a href="http://www.brassbellmusic.com/t-events.aspx">Events</a></li>
-								<li><a href="http://www.brassbellmusic.com/t-InstrumentSale.aspx">Sell Us an Instrument</a></li>
+								<li><a href="t-lessons.aspx">Get Started</a></li>
+								<li><a href="t-lessonsform.aspx">Lessons Inquiry</a></li>
 							</ul>
 						  </li>
+        				  <li><a href="t-repairs.aspx">Repairs</a></li>
 						  <li class="dropdown">
           					<a href="http://www.shopbrassbellmusic.com" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">About Us<span class="caret"></span></a>
           					<ul class="dropdown-menu" role="menu">
             					<li><a href="http://www.shopbrassbellmusic.com/contact_us.php">Contact Us</a></li>
-    							<li><a href="http://www.brassbellmusic.com/t-employees.aspx">Meet Our Staff</a></li>
-								<li><a href="http://www.brassbellmusic.com/t-aboutus.aspx">About Us</a></li>
+    							<li><a href="t-employees.aspx">Meet Our Staff</a></li>
+								<li><a href="t-aboutus.aspx">About Us</a></li>
           					</ul>
         				</li>
       				</ul>

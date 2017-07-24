@@ -139,6 +139,17 @@ html,body
 	padding: 0 15px;
 }
 
+.welcome-text-wrapper h1 {
+	font-size: 2rem;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.welcome-text-wrapper p {
+	font-size: 1.8rem;
+	font-family: Arial;
+}
+
 @media only screen and (min-width: 768px) {
 	.top-nav {
 		padding: 0 5%;
@@ -414,6 +425,7 @@ a.logo {
 	position: relative;
 	z-index: 980;
 }
+
 /* min-height for larger screens */
 @media (min-width: 767px) {
 	.body-wrapper {
@@ -432,7 +444,6 @@ a.logo {
 }
 
 /* buttons */
-
 .button {
 	background: #ccc;
 	color: #fff;
