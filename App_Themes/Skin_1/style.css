@@ -1,11 +1,22 @@
 /* Custom CSS */
+@font-face { 
+	font-family:'bebas'; 
+	src: 
+	url('/fonts/Bebas.eot#iefix'),
+	url('/fonts/Bebas.woff'),
+	url('/fonts/Bebas.ttf'),
+	url('/fonts/Bebas.svg#Bebas'); 
+	font-weight: normal;
+	font-style: normal; 
+}
+
 html,body
 {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+	overflow-x: hidden;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
@@ -17,16 +28,6 @@ html,body
     background-repeat: repeat-x;
     -webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
     box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
-}
-
-@font-face { 
-	font-family:'bebas'; 
-	src: 
-	url('/fonts/Bebas.eot#iefix'),
-	url('/fonts/Bebas.woff'),
-	url('/fonts/Bebas.ttf'),
-	url('/fonts/Bebas.svg#Bebas'); 
-	font-weight: normal; font-style: normal; 
 }
 
 .dropdown-menu {
@@ -49,6 +50,10 @@ html,body
     border-radius: 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+h1, h2, h3 {
+	font-family: bebas;
 }
 
 .glyph-button:active {
@@ -855,6 +860,10 @@ a.category-link-button {
 	margin: 0 auto;
 }
 
+.category-link-box a {
+	text-decoration: none;
+}
+
 .category-box {
 	padding: 0px;
 	text-align: center;
@@ -1172,20 +1181,26 @@ h1.product-page-header {
 	/* height: auto; */
 }
 
-.masthead_full{
+.bb-container .masthead {
+	margin-left: calc(-5% - 15px);
+    margin-right: calc(-5% - 15px);
+    width: calc(111% + 15px);
+}
+
+.banner-lg {
     display:block;
 }
 
-.masthead_mobile{
+.banner-mbl{
     display:none;
 }
 
 @media (max-width: 640px) and (min-width: 320px){
-    .masthead_full{
+    .banner-lg {
         display:none;
     }
 
-    .masthead_mobile{
+    .banner-mbl {
         display:block;
         width:100%;
     }
