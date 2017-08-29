@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6,
 .bb-container {
 	padding: 0 15px;
 }
-
+/* 
 .row {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6,
   .row > [class*='col-'] {
 	display: flex;
 	flex-direction: column;
-  }
+  } */
 
 @media only screen and (min-width: 768px) {
 	.top-nav {
@@ -1653,4 +1653,3 @@ a.brand-links {
 .brandbar .featured-item-name-wrap {
 	display: none;
 }
-
