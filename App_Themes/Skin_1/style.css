@@ -76,6 +76,41 @@ h1, h2, h3, h4, h5, h6,
     padding-left: 1.5rem;	/*Adjusted to move all bio pics to the right*/
 }
 
+img.center {
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+.transparent-box {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.74);
+	left: 45.5px;
+	top: 34px;
+	text-align: left;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: calc(100% - 45.5px);
+}
+
+.banner-title, .banner-tagline {
+	vertical-align: middle;
+	color: #222 !important;
+}
+
+.banner-title {
+	font-weight: 400;
+}
+
+.banner-tagline {
+	font-weight: 100;
+}
+
+.img-text-container {
+	position: relative;
+}
+
 .fancy-btn.focus, .fancy-btn:focus, .fancy-btn:hover {
     text-decoration: none;
 }
@@ -513,8 +548,6 @@ a.button {
 }
 
 .call-to-action {
-	color: #ffffff;
-	background: #0153a7;
 	border-color: #0153a7;
 }
 
@@ -1188,14 +1221,25 @@ h1.product-page-header {
 }
 
 @media (max-width: 640px) and (min-width: 320px){
-    .banner-lg {
+    .banner-lg, .banner-tagline {
         display:none !important;
     }
 
     .banner-mbl {
         display:block !important;
-        width:100%;
-    }
+		width:100%;
+		padding-left: 14px;
+	}
+
+	.transparent-box {
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.74);
+		left: 28px;
+		top: 0px;
+		padding-bottom: 11px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 .product-page .add-to-cart-group .quantity-field {
