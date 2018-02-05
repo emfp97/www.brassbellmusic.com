@@ -1375,6 +1375,9 @@ table {
 }
 th {
   text-align: left;
+  font-family: 'bebasregular';
+  word-spacing: .25rem;
+  letter-spacing: .1rem;
 }
 .table {
   width: 100%;
@@ -1581,6 +1584,9 @@ label {
   display: inline-block;
   margin-bottom: 5px;
   font-weight: bold;
+  font-family: 'bebasregular';
+  word-spacing: .25rem;
+  letter-spacing: .1rem;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -1589,8 +1595,8 @@ input[type="search"] {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
+  margin: 4px 5px 0 5px;
+  /* margin-top: 1px \9; */
   /* IE8-9 */
 
   line-height: normal;

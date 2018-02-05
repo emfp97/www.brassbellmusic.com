@@ -168,6 +168,9 @@
 	padding-bottom: 8px;
 	margin-bottom:8px;
 	color:#666;
+	font-family: 'bebasregular';
+  	word-spacing: .5rem;
+  	letter-spacing: .1rem;
 }
 
 /* errors */
@@ -209,11 +212,11 @@
 	margin-bottom: 15px;
 }
 
-	.form-group label {
-		display: inline-block;
-		margin-bottom: 5px;
-		font-weight: 700;
-	}
+.form-group label {
+	display: inline-block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
 
 .form-control {
 	display: block;
