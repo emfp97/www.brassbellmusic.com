@@ -752,14 +752,24 @@ form-group .radio, form-group .checkbox {
 }
 
 .cart-product-image {
-	float: left;
-	padding-right: 4px;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    max-width: 40%;
+}
+
+.cart-product-image img {
 	max-width: 100%;
 }
 
-	.cart-product-image img {
-		max-width: 100%;
+@media only screen and (min-width: 768px) {
+	.cart-product-image {
+		float: left;
+		padding-right: 15px;
+		padding-bottom: 10px;
+		max-width: 25%;
 	}
+}
 
 /* tool tips */
 

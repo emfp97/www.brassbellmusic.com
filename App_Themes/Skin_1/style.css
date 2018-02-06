@@ -150,18 +150,16 @@ img.center {
 .bb-container {
 	padding: 0 15px;
 }
-/* 
-.row {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display:         flex;
-	flex-wrap: wrap;
-  }
-  .row > [class*='col-'] {
-	display: flex;
-	flex-direction: column;
-  } */
+
+@media (min-width: 992px) {
+    .bottom-home-row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+        margin-bottom: 3rem;
+    }
+}
 
 @media only screen and (min-width: 768px) {
 	.top-nav {
@@ -464,15 +462,19 @@ a.logo {
     user-select: none;
     border: 1px solid transparent;
     padding: .75rem 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: .3rem;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 	background: #fff;
-    color: #0153a7;
-    border-color: #0153a7;
+    color: #0055a5;
+    border-color: #0055a5;
 	margin: 2rem;
+
+	font-family: 'bebasregular';
+	word-spacing: .25rem;
+	letter-spacing: .1rem;
 }
 
 .button:focus {
@@ -484,7 +486,7 @@ a.logo {
 .button:hover,
 .button:focus {
 	color: #fff;
-	background-color: #0153a7;
+	background-color: #0055a5;
 	text-decoration: none;
 }
 
@@ -529,8 +531,8 @@ a.button {
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    color: #0153a7;
-    border-color: #0153a7;
+    color: #0055a5;
+    border-color: #0055a5;
 	margin: 2rem;
 }
 
@@ -543,12 +545,12 @@ a.button {
 .fancy-btn.active, .fancy-btn:focus, .fancy-btn:hover {
     text-decoration: none;
     color: #fff;
-    background-color: #0153a7;
-    border-color: #0153a7;
+    background-color: #0055a5;
+    border-color: #0055a5;
 }
 
 .call-to-action {
-	border-color: #0153a7;
+	border-color: #0055a5;
 }
 
 .call-to-action:hover,
@@ -557,8 +559,8 @@ a.button {
 .call-to-action.active,
 .open .dropdown-toggle.call-to-action {
 	color: #ffffff;
-	background-color: #0573e4;
-	border-color: #0573e4;
+	background-color: #0055a5;
+	border-color: #0055a5;
 }
 
 .call-to-action:active,
@@ -909,7 +911,7 @@ a.category-link-button {
 .footer-wrapper {
 	margin-top: 1rem;
 	padding: 1.25rem 0;
-    background: #0153a7;
+    background: #0055a5;
 }
 
 .footerHeading {
@@ -995,7 +997,7 @@ margin:0 auto;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #fff;
-	background: #0153a7;
+	background: #0055a5;
 }
 .featured-entity-name-wrap a
 {
@@ -1257,7 +1259,7 @@ h1.product-page-header {
 }
 
 .static-cart {
-	background: #0153a7;
+	background: #0055a5;
 }
 
 .cart-items {
